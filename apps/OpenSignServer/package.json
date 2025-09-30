@@ -27,7 +27,7 @@
     "@signpdf/signer-p12": "^3.2.4",
     "@signpdf/signpdf": "^3.2.5",
     "aws-sdk": "^2.1692.0",
-    "axios": "^1.10.0",
+    "axios": "^1.12.2",
     "coherentpdf": "^2.5.5",
     "cors": "^2.8.5",
     "date-fns-tz": "^3.2.0",
