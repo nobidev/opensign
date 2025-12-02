@@ -32,7 +32,7 @@
     "cors": "^2.8.5",
     "date-fns-tz": "^3.2.0",
     "dotenv": "^17.2.3",
-    "express": "^5.1.0",
+    "express": "^5.2.0",
     "form-data": "^4.0.4",
     "generate-api-key": "^1.0.2",
     "googleapis": "^161.0.0",
