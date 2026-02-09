@@ -2,6 +2,8 @@
 sidebar_position: 4
 title: Quickly Send the Document for Signature Using Template
 ---
+## Overview
+Bulk Send allows you to send a document to multiple recipients at once using a template. You can prefill document data, signer details, and import information using a CSV file to automate large-scale document sending.
 
 # How to use the OpenSign Quick Send feature to send a document for signature using a template
 
@@ -9,7 +11,7 @@ title: Quickly Send the Document for Signature Using Template
 
 - **Navigate to New template form**: On the left sidebar, click on "Templates" to expand the menu. and Click on the "Create template" option.
 
-<img width="828" alt="Create Template" src="https://github.com/user-attachments/assets/143a752c-1ee3-4424-afe4-65922b71ddbb" />
+<img width="828" alt="Create Template" src="https://github.com/user-attachments/assets/9a21705c-84ff-44c1-81a5-bc4e5cae3c7a" />
 
 ### Uploading Your Document
 
@@ -21,98 +23,200 @@ title: Quickly Send the Document for Signature Using Template
 - **[3] Title** *(Required)*: Provide a title for your template. For example, "Demo Custom Template."
 - **[4] Description**: Optionally add a description to give context or instructions regarding the template. 
 - **[5] Note**: Optionally add a note to give context or instructions regarding the document.
+You can also configure additional settings such as Send in Order, Allowed Modifications, and other advanced options based on your requirements.
 
-### Set the sending order
-- **[6] Send in Order**
-  - **If you choose:**
-  - **Yes**: Selecting this option will send the signing request to the first signer initially. Once the first signer completes their part, the next signer in the sequence will receive the request. This process continues until all signers have signed the document. This method ensures that the document is signed in a specific order.
-  - **No**: Selecting this option will send the signing links to all signers simultaneously. Every signer can sign the document at their convenience, regardless of whether other signers have completed their signatures. This method is faster but does not enforce any signing order among the participants.
-Select the option that best suits the needs of your document processing.
-### Auto reminder (feature only available for subscribed users)
-- **[7]** Once you enable the auto reminder, a text field will appear allowing you to set the reminder for a specific number of days.
-  - **Remind once in every (Days)**: Here, you can set the number of days for the reminder.
-
-  Note: You can set a maximum of 15 reminders. For example, if the document completion time is 16 days and you try to schedule a reminder every day, the system will not allow it, as the reminder limit would be exceeded.
-  
-### Time to complete (days)
-- **[8]** You can specify the number of days within which the document must be signed. For example, if you set the expiration period to 15 days, the created document will remain available for signing for 15 days from the date of creation. After this period, the document will expire, and the signer will no longer be able to sign it.
-
-###  BCC
-- **[9]** The BCC (Blind Carbon Copy) feature allows users to receive document completion emails at specified email addresses.
-You can add multiple contacts in the BCC field to notify several recipients. 
-You can either:
-Click "Add New" to enter a new email contact, or
-Select from existing contacts using the dropdown list.
-
-### Security Setting
-- **[10] Enable OTP Verification** :
-  
-If set to "Yes," the signer will be required to complete email OTP verification before viewing and signing the document. If "Enable OTP Verification" is set to "No," the signer will not be prompted for OTP verification during the signing process.
-Note: This feature is available exclusively on paid plans.
-
-### Enable tour:
-  
-- **[11]** If set to "Yes," the signer will see the tour guide while signing the document. If your signer is familiar with OpenSign and you prefer not to display the tour guide, you can select "No," and the tour guide will not be shown to your signers.
-
-### Notify on signatures:
-  
-- **[12]** If set to "Yes," the document owner will receive an email notification each signer completes their signature.
-Note: This feature is available exclusively on paid plans.
-
-### Allow modifications: 
-
-- **[13]** If set to Yes, the signer will be allowed to make modifications to the document during the signing process. However, they cannot edit or remove any fields that were already placed by the document owner. They can only add basic fields such as signature, stamp, initials, text, and cells.
-
-If both Allow Modification and Enable OTP are set to Yes, the signer will still not be able to edit or delete existing fields, but will gain access to additional advanced fields to add during signing. These include: signature, stamp, initials, name, job title, company, text, cells, and email.
-
-Note: This feature is available exclusively on paid plans.
-
-### Redirect url: 
-- **[14]**  After signing the document and upon its completion, the signer will be redirected to the specified URL.
-
-### Proceed to Template Creation Panel
+### Proceed to Template Editor
 - **Next**: Click the "Next" button to proceed to the next stage of template creation, where you can add widgets and finalize the template.
 - **Cancel**: If you need to start over or make changes, click Cancel button to clear the form.
-## Step 2: 
-### Template creation 
+  
+## Step 2: Add Roles and Widgets
 
-<img width="828" alt="Create Template" src="https://github.com/user-attachments/assets/cad2a0ee-c3be-4569-a5ae-d1114ea6a853" />
+### Add Prefill Widgets
 
-- **[1] Define Roles**:
-  - **Add Roles**: In the roles section on the right, click "+ Add role" to specify the roles involved in the document, such as Candidate, HR, and Manager.
-- **[2] Assign Widgets to Roles**: Click on each role to highlight it, then drag and drop the widget to assign it to that role.
-  - **[1] Assign signature widget**: Select the Role from the right side panel, click on the signature widget, and position it where the signature is required. You can place multiple signature widgets for each Role, as required.
+- Select the **Prefill role** from the right-side panel.  
+- Drag and drop Prefill widgets onto the document.
 
-  After placing the Signature widget, you will see the options on the widget such as:
-  - **Add Signer/Change Signer**: Clicking the first icon on the signature widget allows you to change the signer. You can choose from existing signers in the dropdown or add a new signer.
-  - **Copy Signature**: Clicking on this option reveals the following choices.
-    -  All pages: It will copy the signature widget to all pages.
-    -  All pages but last: It will copy the signature widget to all pages except the last page.
-    -  All pages but first: It will copy the signature widget to all pages except the first page.
-  - **[2] Add other widgets**: Depending on your needs, you can include additional widgets such as:
-Stamps, Initials, Name, Date, Text, Checkbox, and more.
+<img width="828" alt="Create Template" src="https://github.com/user-attachments/assets/e9d07206-254d-48b6-9ea5-19f3ca1ce080" />
 
-### Step 3: Save Template 
-**Next button**: Once you’ve organized your widgets and set their properties, simply click the “Next” button to save your template.
+#### Add Signature Widget
 
-After creating a template, a “Create Document” popup will appear with the prompt:
- “What would you like to do with the template you just created?”
+- Select the role → Click **Signature Widget** → Place it where the signature is required.
+- You can add multiple signature widgets for each role.
 
-You’ll be presented with the following options: Use Template, Bulk Send, Embed, and Copy Public URL.
+After placing the Signature widget, the following options are available:
 
-- Click Bulk Send to open a popup for selecting signers.
-- Assign signers to the roles displayed in the popup. You can create multiple documents by clicking the Add New button to add more signers. Once all signers are added, click Send.
-- Request signature emails will be sent to the respective signers, and the documents will be created and listed under the In Progress Documents report.
+- **Add/Change Signer**: Change the assigned signer or add a new signer.  
+- **Copy Signature**:
+  - **All pages** – Copies to all pages  
+  - **All pages but last** – Copies to all pages except the last  
+  - **All pages but first** – Copies to all pages except the first  
+
+---
+
+### Add Other Widgets
+
+You can also add additional widgets such as:
+
+- Stamp  
+- Initials  
+- Name  
+- Date  
+- Text  
+- Checkbox  
+- Dropdown  
+- And more  
+
+---
+
+## Step 3: Save Template
+
+- Click **Next** after placing and configuring all widgets to save the template.
+
+After saving, a **Create Document** popup will appear with the message:
+
+> *"What would you like to do with the template you just created?"*
+
+You will see the following options:
+
+- Use Template  
+- **Bulk Send**  
+- Embed  
+- Copy Public URL  
+
+Click **Bulk Send** to open the Bulk Send panel and start sending documents in bulk.
+
+---
+
+## Prefill Widgets in Bulk Send
+
+OpenSign supports **Prefill Widgets** in Bulk Send.
+
+When a template contains Prefill Widgets:
+
+- Prefill fields appear in the **Bulk Send panel**
+- Users can enter values before sending
+- Entered values are automatically embedded into the document
+- Both **Required** and **Optional** Prefill fields are supported
+
+<img width="828" alt="Bulk send panel" src="https://github.com/user-attachments/assets/91b908c8-3c24-4afc-9bd9-6b29cb778891" />
+
+---
+
+## Import Data Using CSV
+
+You can upload a CSV file to automatically populate Prefill fields and signer details.
+
+<img width="828" alt="bulk import from csv" src="https://github.com/user-attachments/assets/448a7a94-8685-47cc-86a7-dbd47e67c8f6" />
+
+### Steps to Import CSV
+1. Click **Download sample file**
+2. Add your data to the sample CSV
+3. Upload the CSV file in Bulk Send
+4. Click **Send**
+
+**Important:**
+- Do **not change column names** in the CSV file  
+- **CSV import is NOT available in Free Self-Host version**
+
+---
+
+## Date Format Rules (CSV Only)
+
+For **Date-type Prefill fields in CSV**, you must use:
+**Format:** `DD-MM-YYYY`  
+**Example:** `28-01-2026`
+
+- On the document, users may use any date format, but in the Excel/CSV file the date must strictly follow `DD-MM-YYYY`.
+- After import, the date automatically converts to the widget’s selected format
+
+---
+
+## Checkbox Widget – Multiple Selection (CSV)
+
+Checkbox widgets support multiple values in CSV.
+
+Use the **pipe separator `|`** between options.
+
+**Example:** Option-1|Option-2
+---
+
+## Unsupported Prefill Imports
+
+The following widget values **cannot be imported via CSV**:
+
+- Image widgets  
+- Draw widgets  
+
+---
+
+## Signer Widgets in Bulk Send
+
+Bulk Send also supports **Signer Widgets**.
+
+- Signer widgets appear with **Signer Role + Widget Name**
+- You can prefill signer details before sending
+- When signer receives the document:
+  - Prefilled values are visible
+  - Signer can edit/update values
+  - Signer can complete the document
+
+### Notes
+
+- All signer widget prefills are **optional**
+- You can send without entering signer widget values
+- Signers widgets prefilling is **NOT supported** for:
+  - Signature
+  - Stamp
+  - Initials
+  - Image
+
+Signer details can also be imported via CSV.
+
+---
+
+## CSV Rules for Signer Widgets
+
+### Date Format (Same Rule)
+Use:
+
+`DD-MM-YYYY` (Example: `28-01-2026`)
+
+### Checkbox Multiple Selection
+Use:
+
+`Option-1|Option-2`
+
+---
+
+## Bulk Send Limits
+
+OpenSign allows sending up to **50 documents per Bulk Send**.
+
+The number depends on signer roles:
+
+- **1 Role in template → 50 documents** (This depends on the number of signers included in the Bulk Send request.)
+- **2 Roles in template → 48 documents**
+- More roles reduce total documents accordingly
+---
+## Sending Documents via Bulk Send
+
+- Assign signers to the roles shown in the popup.  
+- To create multiple documents, click **Add New** to add more signers.  
+- After adding all signers, click **Send**.  
+
+Signature request emails will be sent to the respective signers, and the created documents will appear under the **In Progress Documents** report.
+
+---
 
 ### Step 4: Bulk Send from Manage Templates
 For faster processing, the Bulk Send feature allows you to swiftly create and send a document to a signer using the selected template.
 
-<img width="828" alt="Manage Template" src="https://github.com/user-attachments/assets/8eed5a30-8f67-4b58-bc3d-2a8fed9a1299" />
+<img width="828" alt="Manage Template" src="https://github.com/user-attachments/assets/a8737a76-0c92-4288-894d-65640a7757fe" />
 
 How to Send the Document:
 -  Click the Bulk Send button next to the template in the list.
     
--  A popup will open where you can assign signers to each role by simply adding their email addresses.
+-  A popup will open where you can assign signers to each role by entering their email addresses and fill in any Prefill widgets available in the template.
     
 -  If you need to create multiple documents, click the Add New button.
     
@@ -120,16 +224,24 @@ After adding the signers, click the Send button. This will generate the document
 
 ### Step 5: Signers Signing Process
 
-- Enable OTP Verification: No
+### OTP Verification Disabled
 
-If OTP verification is set to No, the signer can access and sign the document directly without email verification.
-Once the signer clicks the signature request link received via email, the document will load immediately, allowing them to sign without entering any OTP.
+If **OTP Verification = No**, the signer can directly open and sign the document without email verification.
 
-- Enable OTP Verification: Yes
+- The signer clicks the **Sign Here** link in the email  
+- The document opens immediately for signing  
 
-If OTP verification is enabled, the signer must complete email verification before signing.
-After receiving the email, the signer should click the ‘Sign Here’ button. This will open the email verification screen.
-Click ‘Get Verification Code’ to receive an OTP via email. Enter the OTP into the textbox and click ‘Verify’. Once verified, the document will open and the signer can proceed to sign.
+---
+
+### OTP Verification Enabled
+
+If **OTP Verification = Yes**, email verification is required before signing.
+
+- The signer clicks **Sign Here** in the email  
+- The email verification screen appears  
+- Click **Get Verification Code** to receive an OTP  
+- Enter the OTP and click **Verify**  
+- After successful verification, the document opens and the signer can proceed to sign  
 
 <div>
   <img width="800" alt="OpenSign send OTP" src="https://github.com/user-attachments/assets/b82c796a-98e3-4296-bde1-fe86b1b993ad" />
@@ -138,22 +250,24 @@ Click ‘Get Verification Code’ to receive an OTP via email. Enter the OTP int
   <img width="800" alt="OpenSign verify otp" src="https://github.com/user-attachments/assets/63cf4b75-9d47-4630-a83c-e916a5c13b3c" />
 </div>
 
-### Step 6: Finalizing the Process:
+### Step 6: Finalizing the Process
 
-To sign the document, the signer simply clicks on the signature widget, which provides options to draw, upload a scanned signature, or type their name. 
+To sign the document, the signer clicks the **Signature widget**, which provides options to **draw**, **upload**, or **type** their signature.
+If any signer fields were prefilled by the document owner, the signer can review and edit those values if needed. After completing all required fields, the signer should click **Finish**.
 
-After completing all assigned fields, the signer should click the ‘Finish’ button.
-   - If the signer is the final signer, they will have the option to download or print the signed document along with the completion certificate. 
+- If the signer is the **final signer**, they will have the option to **download or print** the signed document along with the **Completion Certificate**.  
+- If there are **multiple signers**, the document will automatically move to the next signer. Once all signers have completed the process, each signer will be able to **download and print** the final signed document and Completion Certificate.
 
-   - If there are multiple signers, the document will automatically be forwarded to the next signer. Once all signers have completed their signatures, each signer will be able to download and print the final signed document and completion certificate.
-     
-<img width="800" alt="OpenSignFinalStep" src="https://github.com/user-attachments/assets/f4783aa0-2879-4ec2-9ddc-16d59f3a1fc0" />
+<img width="800" alt="OpenSignFinalStep" src="https://github.com/user-attachments/assets/427c9e9e-4300-40e6-8ded-23afeb844e39" />
+
+---
 
 ## Additional Information
-- All fields marked with an asterisk (*) must be completed before the document can be submitted.
-- Ensure that the document format is supported by OpenSign before uploading.
-- Signed documents can be accessed in the designated 'Root' folder or the one you have specified.
-- Bulk Send is available exclusively with paid plans.
+
+- All fields marked with an asterisk (*) must be completed before submitting the document.  
+- Ensure the uploaded document format is supported by OpenSign.  
+- Signed documents can be found in the **Root folder** or the folder you selected.  
+- **Bulk Send is available only in paid plans.**
 
 If you require more help, feel free to reach out to our customer support on support@opensignlabs.com.
 
