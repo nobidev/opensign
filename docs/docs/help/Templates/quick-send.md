@@ -38,20 +38,12 @@ You can also configure additional settings such as Send in Order, Allowed Modifi
 
 <img width="828" alt="Create Template" src="https://github.com/user-attachments/assets/e9d07206-254d-48b6-9ea5-19f3ca1ce080" />
 
-#### Add Signature Widget
+#### Add widgets against the role
 
-- Select the role → Click **Signature Widget** → Place it where the signature is required.
+- Select the role → Click Signature Widget → Place it where the signature is required.
 - You can add multiple signature widgets for each role.
 
 After placing the Signature widget, the following options are available:
-
-- **Add/Change Signer**: Change the assigned signer or add a new signer.  
-- **Copy Signature**:
-  - **All pages** – Copies to all pages  
-  - **All pages but last** – Copies to all pages except the last  
-  - **All pages but first** – Copies to all pages except the first  
-
----
 
 ### Add Other Widgets
 
@@ -64,7 +56,9 @@ You can also add additional widgets such as:
 - Text  
 - Checkbox  
 - Dropdown  
-- And more  
+- Cells
+- Number
+- Image 
 
 ---
 
